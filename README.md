@@ -4,7 +4,7 @@ This is a full-featured web application for task management, allowing users to a
 The application consists of a **Node.js (Express.js)** backend with a **MongoDB** database and a **React** frontend utilizing **Tailwind CSS** for styling.
 ## ▶️ Live Demo
 Experience the live application here: 
-[![Demo on Vercel](https://vercel.com/button)](https://vercel.com/oksanas-projects-b0004b06/my-task-manager-app/)
+[![Demo on Vercel](https://vercel.com/button)](https://my-task-manager-app-three.vercel.app/)
 
 ---
 
