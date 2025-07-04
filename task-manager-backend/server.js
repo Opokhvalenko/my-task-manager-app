@@ -2,8 +2,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
 const PORT = process.env.PORT || 3000;
-const tasksRouter = require('./routes/tasks');
-const errorHandlerMiddleware = require('./middleware/error-handler');
+const taskRoutes = require('./routes/taskRoutes');
+const errorHandler = require('./middleware/errorHandler');
 const cors = require('cors'); 
 app.use(express.json());
 
@@ -26,9 +26,9 @@ app.get('/', (req, res) => {
     res.send('Welcome to the Simple Task Manager API!');
 });
 
-app.use('/api/v1/tasks', tasksRouter);
+app.use('/api/v1/tasks', taskRoutes);
 
-app.use(errorHandlerMiddleware);
+app.use(errorHandler);
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);

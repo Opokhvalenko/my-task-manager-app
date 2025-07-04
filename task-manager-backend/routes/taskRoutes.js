@@ -7,7 +7,7 @@ const {
     getTask,
     updateTask,
     deleteTask,
-} = require('../controllers/tasks');
+} = require('../controllers/taskController');
 
 const taskValidationRules = [
     body('description')
