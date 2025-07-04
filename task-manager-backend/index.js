@@ -4,8 +4,13 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const tasksRouter = require('./routes/tasks');
 const errorHandlerMiddleware = require('./middleware/error-handler');
-
+const cors = require('cors'); 
 app.use(express.json());
+
+
+app.use(cors({
+  origin: 'https://my-task-manager-app-three.vercel.app'
+}));
 
 const DB_URI = 'mongodb+srv://taskManager:wFJ3E4MPJW4nG@cluster0.qvbeufk.mongodb.net/taskmanagerdb?retryWrites=true&w=majority';
 
