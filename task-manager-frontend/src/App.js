@@ -22,7 +22,7 @@ function App() {
   const [sortBy, setSortBy] = useState('createdAt_desc');
   const [searchTerm, setSearchTerm] = useState('');
 
-  const API_URL = '/api/v1/tasks';
+  const API_URL = 'https://task-manager-app-p2lz.onrender.com/api/v1/tasks';
 
   useEffect(() => {
     fetchTasks();
