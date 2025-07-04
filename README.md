@@ -64,15 +64,15 @@ It demonstrates a full-stack application development cycle using modern web tech
 git clone <YOUR_REPOSITORY_URL>
 cd task-manager-app # or your project folder
 ```
-## 2️⃣ Backend Setup
-Navigate to the backend folder:
+### 2️⃣ Backend Setup
+1. **Navigate to the backend folder:**
 
 ```bash
 
 cd task-manager-backend # or your backend folder name
 ```
 
-Install dependencies:
+2. **Install Node.js dependencies:**
 
 ``` bash 
 
@@ -80,62 +80,70 @@ npm install
 # or
 yarn install
 ``` 
-Create a .env file in the backend root:
+3. **Create a **.env** file in the backend root folder and add the following environment variables:**
 
-env
-``` bash 
+```bash
 PORT=3000
-MONGO_URI=mongodb://localhost:27017/taskmanager
-Replace MONGO_URI with your local or MongoDB Atlas connection string.
+MONGO_URI=mongodb://localhost:27017/taskmanager 
+``` 
 
-Start the backend server:
+(Replace `MONGO_URI with your local or MongoDB Atlas URI connection string`.)
 
 
+4. **Start the backend server:**
+
+```bash
 npm start
 # or
 yarn start
-The backend runs at: http://localhost:3000
-
 ```
 
+The backend runs at: `http://localhost:3000`
+
+
+
 ## 3️⃣ Frontend Setup
-Open a new terminal and navigate to the frontend folder:
+1. **Open a new terminal and navigate to the frontend folder:**
 
 ``` bash 
 cd task-manager-frontend # or your frontend folder name
 ```
-Install dependencies:
+2. **Install React dependencies:**
 
 ``` bash 
 npm install
 # or
 yarn install
-Start the React application:
 ```
 
+3. **Start the React application:**
+
+``` bash 
 npm start
 # or
 yarn start
-The frontend runs at: http://localhost:3001
+```
+The frontend runs at: `http://localhost:3001`
 
-```bash
-💻 Usage
-Open http://localhost:3001 in your browser.
 
-Use the "Add a new task..." input to add tasks.
+## 💻 Usage
+Open `http://localhost:3001` in your browser.
 
-Click ✏️ to edit, ✅/❌ to toggle completion, 🗑️ to delete.
+- **Use the "Add a new task..." input to add tasks.**
 
-Use filter buttons (All, Active, Completed) and sort dropdowns.
+- **Click ✏️ to edit, ✅/❌ to toggle completion, 🗑️ to delete.**
 
-Use the search bar to quickly find tasks.
+- **Use filter buttons (All, Active, Completed) and sort dropdowns.**
+- **Use the "By Date (Newest)" dropdown to sort tasks.**
 
-🌐 Deployment
-Backend: Deploy on Heroku, Render, Cyclic, Fly.io, AWS, DigitalOcean.
+- **Use the search bar to quickly find tasks.**
 
-Frontend: Deploy on Netlify, Vercel, Firebase Hosting, GitHub Pages.
+## 🌐 Deployment
+- **Backend: Deploy on Heroku, Render, Cyclic, Fly.io, AWS, DigitalOcean.**
+
+- **Frontend: Deploy on Netlify, Vercel, Firebase Hosting, GitHub Pages.**
 
 Deployment may require setting environment variables and CORS updates.
 
-✅ Enjoy using your Task Manager app!
+## ✅ Enjoy using your Task Manager app!
 If you find this project helpful, feel free to ⭐ star the repo or contribute.
